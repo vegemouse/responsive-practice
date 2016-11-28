@@ -1,0 +1,235 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+body {
+  background-color: #e7e7e7;
+  background-image: url("../img/rag.png");
+  background-position: top left;
+  background-repeat: repeat-x;
+  margin: 0;
+  color: #444;
+}
+
+aside {
+  width: 35%;
+  float: left;
+  text-align: center;
+}
+
+#container {
+  margin-left: 2%;
+  margin-right: 3%;
+}
+
+#logo {
+  position: relative;
+  margin-top: 32px;
+  background-image: url("../img/logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 284px;
+}
+
+#logo img:nth-child(1) {
+  text-align: center;
+  padding-top: 116px;
+}
+
+small {
+  display: block;
+  font-weight: normal;
+  font-size: 0.7em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 3px;
+  margin-left: 19%;
+  margin-right: 19%;
+
+}
+
+nav ul li {
+  text-transform: uppercase;
+  border-bottom: 1px solid #777;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav ul li:first-of-type {
+  border-top: 1px solid #777;
+}
+
+li a {
+  color: #880000;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+}
+
+main {
+  float: right;
+  width: 65%;
+}
+
+#intro {
+  padding-top: 150px;
+}
+
+#intro h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 2em;
+  font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+  color: #222;
+}
+
+#intro p {
+  line-height: 1.5em;
+  font-family: Cambria, Georgia, serif;
+  font-size: 0.99em;
+}
+
+#people {
+  border-top: 1px solid #666;
+  margin-top: 25px;
+  padding-top: 35px;
+}
+
+#people:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+
+.person {
+  float: left;
+  margin-bottom: 20px;
+  width: 31.3%;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 0.9em;
+}
+
+.person img {
+  max-width: 100%;
+  border-radius: 3%;
+  box-shadow: 2px 2px 2px #b4b4b4;
+}
+
+.person:nth-of-type(2), .person:nth-of-type(5) {
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.person a {
+  color: #880000;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  margin-top: 3px;
+}
+
+footer {
+  border-top: 1px solid #999;
+  margin-top: 10px;
+}
+
+footer p {
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1.5em;
+  padding-top: 20px;
+}
+
+footer p a {
+  color: #880000;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1300px) {
+  .person {
+    width: 15%;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  .person:nth-of-type(2), .person:nth-of-type(5) {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  .person:first-of-type {
+    margin-left: 0;
+  }
+  .person:last-of-type {
+    margin-right: 0;
+  }
+
+  footer {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  aside, main {
+    float: none;
+    width: 100%;
+  }
+
+  aside {
+    position: relative;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #logo {
+    background-image: none;
+  }
+
+  nav ul {
+    border: 0;
+    width: 100%;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  nav ul li:nth-of-type(2) {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .person {
+    width: 48%;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  .person:nth-of-type(2), .person:nth-of-type(5) {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  .person:first-of-type {
+    margin-left: 0;
+  }
+  .person:last-of-type {
+    margin-right: 0;
+  }
+
+}
